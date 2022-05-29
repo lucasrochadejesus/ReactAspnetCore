@@ -6,13 +6,7 @@ let initialState =  [{
   'priority': '',
   'title': 'title 1',
   'description': 'First Activity'
-},
-{
-  'id' : 2,
-  'priority': '',
-  'title': 'title 2',
-  'description': 'Second Activity'
-},
+}, 
 
 ];
 
@@ -51,14 +45,14 @@ function App() {
     }
   }
 
-  function priorityIcon(param){
+  function priorityStyle(param, icon){
     switch(param){
       case '1':
-        return 'smile';
+        return icon ? 'smile' : 'success';
       case '2':
-        return 'meh';
+        return icon ? 'meh' : 'warning';
       case '3':
-        return 'angry';
+        return icon ? 'angry' : 'danger';
       default:
         return 'meh';
     }
@@ -99,10 +93,10 @@ function App() {
             </button>
       </div>
     </form>
-    <div className='App mt-3'>
+    <div className='mt-3'>
        
           {activities.map(act => (
-        <div key={act.id}  className='card mb-2 shadow-sm'>
+        <div key={act.id}  className={'card mb-2 shadow-sm border-' + priorityStyle(act.priority)}>
           <div className='card-body'>
               <div className='d-flex justify-content-between'>
                
@@ -113,8 +107,8 @@ function App() {
                
                 <h6>
                    Priority:
-                   <span className='ms-1 text-black'>
-                   <i className={'me-1 far fa-' + priorityIcon(act.priority)}></i>
+                   <span className={'ms-1 text-' + priorityStyle(act.priority)}>
+                   <i className={'me-1 far fa-' + priorityStyle(act.priority, true)}></i>
                   {priorityLabel(act.priority)}
                    </span>
                 </h6>

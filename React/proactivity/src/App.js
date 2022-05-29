@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react';
+import { useState } from 'react';
 
 let initialState =  [{
   "id" : 1,
@@ -17,17 +17,16 @@ function App() {
 
   const [activities, setActivities] = useState(initialState)
 
-
-   
   function addActivity(e){
+    // e.preventDefault() added for stop submit the form default
     e.preventDefault();
 
     const act = {
       id: document.getElementById('id').value,
       description: document.getElementById('description').value
     };
-  
-    setActivities([...activities, {...activities}]);
+    // spred operator to add activity in array
+    setActivities([...activities, {...act}]);
     console.log(activities);
   }
   
@@ -64,7 +63,11 @@ function App() {
                   - title
                 </h5>
                 <h6>
-                  Priority: Normal
+                Priority:
+                <span className="ms-1 text-black">
+                  <i className="me-1 fa-regular fa-face-meh"></i>
+                  Normal
+                </span>
                 </h6>
               </div>
               {act.id} - {act.description}

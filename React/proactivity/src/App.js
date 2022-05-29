@@ -66,7 +66,9 @@ function App() {
     <form className='row g-3'>
         <div className='col-md-6'>
           <label className='form-label'>Id</label>
-          <input id='id' type='text' className='form-control'/>
+          <input id='id' type='text' className='form-control' 
+          readOnly value={Math.max.apply(Math, activities.map(item => item.id)) + 1}
+          />
         </div>
         <div className="col-md-6">
                 <label className="form-label">Priority</label>

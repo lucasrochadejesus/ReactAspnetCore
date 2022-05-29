@@ -34,7 +34,7 @@ function App() {
   function deleteActivity(id){
     
     const actFilter = activities.filter(act => act.id !== id);
-    setActivities([... actFilter])
+    setActivities([...actFilter])
      
   }
 

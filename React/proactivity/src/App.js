@@ -31,6 +31,14 @@ function App() {
     console.log(activities);
   }
 
+  function deleteActivity(id){
+    
+    const actFilter = activities.filter(act => act.id !== id);
+    setActivities([... actFilter])
+     
+  }
+
+
   // Function Priority Values Label
   function priorityLabel(param){
     switch(param){
@@ -124,7 +132,9 @@ function App() {
                   Edit
                 </button> 
                
-                <button className='btn btn-sm btn-outline-danger'>
+                <button 
+                className='btn btn-sm btn-outline-danger' 
+                onClick={() => deleteActivity(act.id)}>
                   <i className='fas fa-trash me-2'></i>
                   Delete
                   </button>

@@ -8,20 +8,15 @@ namespace proactivity.API.Models
     public class Activity
     {
 
-        public Activity(int id, string title, string description, string priority) 
-        {
-            this.Id = id;
-            this.Title = title;
-            this.Description = description;
-            this.Priority = priority;
-        }
+        
+        public int Id { get; set; }
 
-        public int Id { get; private set; }
+        public string Title { get; set; }
 
-        public string Title { get; private set; }
+        public string Description { get; set; }
 
-        public string Description { get; private set; }
+        public Priority Priority { get; set; }
 
-        public string Priority { get; private set; }
+    
     }
 }

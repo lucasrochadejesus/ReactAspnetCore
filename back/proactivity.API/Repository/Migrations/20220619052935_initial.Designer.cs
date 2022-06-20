@@ -10,7 +10,7 @@ using proactivity.API.Repository;
 namespace proactivity.API.Repository.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220619045745_initial")]
+    [Migration("20220619052935_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,8 +27,8 @@ namespace proactivity.API.Repository.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Priority")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Priority")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");

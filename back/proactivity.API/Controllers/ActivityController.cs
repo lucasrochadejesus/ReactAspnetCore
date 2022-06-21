@@ -14,33 +14,33 @@ namespace proactivity.API.Controllers
     public class ActivityController : ControllerBase
     {
        // private readonly ILogger<ActivityController> _logger;
-        private readonly DataContext _context;
+        private readonly DataContext _ctx;
         
 
-        public ActivityController(DataContext context)
+        public ActivityController(DataContext ctx)
         {
-            _context = context;
+            _ctx = ctx;
         }
 
         [HttpGet]
         public IEnumerable<Activity> Get()
         {
-            return _context.Activities;
+            return _ctx.Activities;
         }
 
         [HttpGet("{id}")]
         public Activity getById(int id)
         {
-            return _context.Activities.FirstOrDefault(Act => Act.Id == id);
+            return _ctx.Activities.FirstOrDefault(Act => Act.Id == id);
         }
 
         [HttpPost]
         public IEnumerable<Activity> Post(Activity activity)
         {
-            _context.Activities.Add(activity);
-            if(_context.SaveChanges() > 0)
+            _ctx.Activities.Add(activity);
+            if(_ctx.SaveChanges() > 0)
             {
-                return _context.Activities;
+                return _ctx.Activities;
             } else 
             {
                 throw new Exception("Activity not included");
@@ -52,10 +52,10 @@ namespace proactivity.API.Controllers
         {
             if (activity.Id != id) throw new Exception("Update wrong activity");
 
-            _context.Update(activity);
-            if (_context.SaveChanges() > 0)
+            _ctx.Update(activity);
+            if (_ctx.SaveChanges() > 0)
             {
-                return _context.Activities.FirstOrDefault(act => act.Id == id);
+                return _ctx.Activities.FirstOrDefault(act => act.Id == id);
             }
             else
             {
@@ -67,11 +67,11 @@ namespace proactivity.API.Controllers
         [HttpDelete("{id}")]
         public bool Delete(int id)
         {
-            var activity = _context.Activities.FirstOrDefault(act => act.Id == id);
+            var activity = _ctx.Activities.FirstOrDefault(act => act.Id == id);
             if(activity == null) throw new Exception("Activity doesnt exists");
 
-            _context.Remove(activity);
-            return _context.SaveChanges() > 0;
+            _ctx.Remove(activity);
+            return _ctx.SaveChanges() > 0;
         }
 
 

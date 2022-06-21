@@ -7,7 +7,6 @@ namespace proactivity.API.Models
 {
     public class Activity
     {
-
         
         public int Id { get; set; }
 

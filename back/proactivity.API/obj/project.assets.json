@@ -1364,24 +1364,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/lucas/.nuget/packages/": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lucas/Desktop/DEV/back/proactivity.API/proactivity.API.csproj",
+      "projectUniqueName": "C:\\dev\\ReactAspnetCore\\back\\proactivity.API\\proactivity.API.csproj",
       "projectName": "proactivity.API",
-      "projectPath": "/Users/lucas/Desktop/DEV/back/proactivity.API/proactivity.API.csproj",
-      "packagesPath": "/Users/lucas/.nuget/packages/",
-      "outputPath": "/Users/lucas/Desktop/DEV/back/proactivity.API/obj/",
+      "projectPath": "C:\\dev\\ReactAspnetCore\\back\\proactivity.API\\proactivity.API.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\ReactAspnetCore\\back\\proactivity.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/lucas/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1443,7 +1453,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

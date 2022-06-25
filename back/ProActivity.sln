@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proactivity.API", "proactivity.API\proactivity.API.csproj", "{ECDE4892-1B63-4D3B-989A-203B8C21C59A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proactivity.Data", "proactivity.Data\proactivity.Data.csproj", "{E0FA3E71-FB64-4A69-9A49-DCD606741951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proactivity.Domain", "proactivity.Domain\proactivity.Domain.csproj", "{F1642D20-8ACB-4FC4-8120-9E206F9B675A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECDE4892-1B63-4D3B-989A-203B8C21C59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDE4892-1B63-4D3B-989A-203B8C21C59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDE4892-1B63-4D3B-989A-203B8C21C59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDE4892-1B63-4D3B-989A-203B8C21C59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0FA3E71-FB64-4A69-9A49-DCD606741951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0FA3E71-FB64-4A69-9A49-DCD606741951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0FA3E71-FB64-4A69-9A49-DCD606741951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0FA3E71-FB64-4A69-9A49-DCD606741951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1642D20-8ACB-4FC4-8120-9E206F9B675A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1642D20-8ACB-4FC4-8120-9E206F9B675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1642D20-8ACB-4FC4-8120-9E206F9B675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1642D20-8ACB-4FC4-8120-9E206F9B675A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

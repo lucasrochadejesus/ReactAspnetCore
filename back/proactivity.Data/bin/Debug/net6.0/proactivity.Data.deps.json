@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "proactivity.Data/1.0.0": {
+        "dependencies": {
+          "proactivity.Domain": "1.0.0"
+        },
+        "runtime": {
+          "proactivity.Data.dll": {}
+        }
+      },
+      "proactivity.Domain/1.0.0": {
+        "runtime": {
+          "proactivity.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "proactivity.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "proactivity.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

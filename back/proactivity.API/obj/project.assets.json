@@ -543,6 +543,30 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "proactivity.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5",
+          "proactivity.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/proactivity.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/proactivity.Data.dll": {}
+        }
+      },
+      "proactivity.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/proactivity.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/proactivity.Domain.dll": {}
+        }
       }
     }
   },
@@ -1352,6 +1376,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "proactivity.Data/1.0.0": {
+      "type": "project",
+      "path": "../proactivity.Data/proactivity.Data.csproj",
+      "msbuildProject": "../proactivity.Data/proactivity.Data.csproj"
+    },
+    "proactivity.Domain/1.0.0": {
+      "type": "project",
+      "path": "../proactivity.Domain/proactivity.Domain.csproj",
+      "msbuildProject": "../proactivity.Domain/proactivity.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1360,7 +1394,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SQLite >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "proactivity.Data >= 1.0.0",
+      "proactivity.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1397,7 +1433,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\dev\\ReactAspnetCore\\back\\proactivity.Data\\proactivity.Data.csproj": {
+              "projectPath": "C:\\dev\\ReactAspnetCore\\back\\proactivity.Data\\proactivity.Data.csproj"
+            },
+            "C:\\dev\\ReactAspnetCore\\back\\proactivity.Domain\\proactivity.Domain.csproj": {
+              "projectPath": "C:\\dev\\ReactAspnetCore\\back\\proactivity.Domain\\proactivity.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

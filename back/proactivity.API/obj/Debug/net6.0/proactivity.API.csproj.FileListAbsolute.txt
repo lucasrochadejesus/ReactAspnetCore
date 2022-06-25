@@ -106,3 +106,7 @@ C:\dev\ReactAspnetCore\back\proactivity.API\obj\Debug\net6.0\refint\proactivity.
 C:\dev\ReactAspnetCore\back\proactivity.API\obj\Debug\net6.0\proactivity.API.pdb
 C:\dev\ReactAspnetCore\back\proactivity.API\obj\Debug\net6.0\proactivity.API.genruntimeconfig.cache
 C:\dev\ReactAspnetCore\back\proactivity.API\obj\Debug\net6.0\ref\proactivity.API.dll
+C:\dev\ReactAspnetCore\back\proactivity.API\bin\Debug\net6.0\proactivity.Data.dll
+C:\dev\ReactAspnetCore\back\proactivity.API\bin\Debug\net6.0\proactivity.Domain.dll
+C:\dev\ReactAspnetCore\back\proactivity.API\bin\Debug\net6.0\proactivity.Data.pdb
+C:\dev\ReactAspnetCore\back\proactivity.API\bin\Debug\net6.0\proactivity.Domain.pdb

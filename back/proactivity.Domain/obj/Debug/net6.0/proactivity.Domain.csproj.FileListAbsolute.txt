@@ -1,0 +1,12 @@
+C:\dev\ReactAspnetCore\back\proactivity.Domain\bin\Debug\net6.0\proactivity.Domain.deps.json
+C:\dev\ReactAspnetCore\back\proactivity.Domain\bin\Debug\net6.0\proactivity.Domain.dll
+C:\dev\ReactAspnetCore\back\proactivity.Domain\bin\Debug\net6.0\proactivity.Domain.pdb
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.csproj.AssemblyReference.cache
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.AssemblyInfoInputs.cache
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.AssemblyInfo.cs
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.csproj.CoreCompileInputs.cache
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.dll
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\refint\proactivity.Domain.dll
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\proactivity.Domain.pdb
+C:\dev\ReactAspnetCore\back\proactivity.Domain\obj\Debug\net6.0\ref\proactivity.Domain.dll

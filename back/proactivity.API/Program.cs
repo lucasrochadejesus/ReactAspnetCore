@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using proactivity.API.Repository;
+using proactivity.Data.Context;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

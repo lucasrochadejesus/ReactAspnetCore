@@ -11,7 +11,14 @@ namespace proactivity.Data.Mappings
 {
     public class ActivityMap : IEntityTypeConfiguration<Activity>
     {
-        public void Configure(EntityTypeBuilder<Activity> builder);
+        public void Configure(EntityTypeBuilder<Activity> builder)
+        {
+            builder.ToTable("Activities");
+
+            builder.Property(a => a.Title)
+                .HasColumnType("varchar(100)");
+
+        }
 
 
     }

@@ -19,7 +19,7 @@ namespace proactivity.Domain.Entities
         public DateTime conclusionDate { get; set; }
 
         public Priority Priority { get; set; }
-
+ 
 
         public Activity() => creationDate = DateTime.Now;
 

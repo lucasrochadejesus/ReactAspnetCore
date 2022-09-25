@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using proactivity.API.Models;
-using proactivity.API.Repository;
+using proactivity.Data.Context;
+using proactivity.Domain.Entities;
 
 namespace proactivity.API.Controllers
 {

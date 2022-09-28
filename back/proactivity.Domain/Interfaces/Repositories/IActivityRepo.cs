@@ -11,6 +11,7 @@ namespace proactivity.Domain.Interfaces.Repositories
     {
         Task<IEnumerable<Activity>> GetAllActivities();
         Task<Activity> GetActivityById(int id);
+
         Task<Activity> GetActivityByTitle(string title);
     }
 }

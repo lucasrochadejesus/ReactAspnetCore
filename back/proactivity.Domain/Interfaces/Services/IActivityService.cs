@@ -14,7 +14,8 @@ namespace proactivity.Domain.Interfaces.Services
         Task<Activity> DeleteActivity(Activity model);
         Task<IEnumerable<Activity>> GetAllActivities(Activity model);
         Task<Activity> GetActivityById(int activityId); 
-        Task<bool> DeleteActivity(int activityId); 
+        Task<bool> DeleteActivity(int activityId);
+
         Task<bool> DoneActivity(Activity model);
 
          

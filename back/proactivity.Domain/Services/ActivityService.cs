@@ -15,7 +15,7 @@ namespace proactivity.Domain.Services
 
         public ActivityService(IActivityRepo activityRepo)
         {
-            _activityRepo = activityRepo; 
+            _activityRepo = activityRepo;
         }
 
         public async Task<Activity> AddActivity(Activity model)

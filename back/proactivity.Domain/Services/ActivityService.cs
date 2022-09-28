@@ -20,12 +20,12 @@ namespace proactivity.Domain.Services
 
         public async Task<Activity> AddActivity(Activity model)
         {
-           if(await _activityRepo.GetActivityById(model.Id) == null)
+            if (await _activityRepo.GetActivityById(model.Id) == null)
             {
                 _activityRepo.Add(model);
-                if(await _activityRepo.SaveChangesAssync())
+                if (await _activityRepo.SaveChangesAssync())
                     return model;
-                  
+
             }
             return null;
         }
@@ -52,10 +52,11 @@ namespace proactivity.Domain.Services
         {
             var activity = await _activityRepo.GetActivityById(activityId);
             if (activity == null) throw new Exception("Id not exists.");
-             
+
             _activityRepo.Delete(activity);
+
             return await _activityRepo.SaveChangesAssync();
-                    
+
         }
 
         public async Task<bool> DoneActivity(Activity model)
@@ -64,7 +65,7 @@ namespace proactivity.Domain.Services
             {
                 model.Conclusion();
                 _activityRepo.Update<Activity>(model);
-                return await _activityRepo.SaveChangesAssync(); 
+                return await _activityRepo.SaveChangesAssync();
             }
             return false;
 
@@ -80,6 +81,6 @@ namespace proactivity.Domain.Services
             throw new NotImplementedException();
         }
 
-    
+
     }
 }

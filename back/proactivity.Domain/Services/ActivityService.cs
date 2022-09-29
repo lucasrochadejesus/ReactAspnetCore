@@ -42,12 +42,7 @@ namespace proactivity.Domain.Services
 
             return null;
         }
-
-        public Task<Activity> DeleteActivity(Activity model)
-        {
-            throw new NotImplementedException();
-        }
-
+         
         public async Task<bool> DeleteActivity(int activityId)
         {
             var activity = await _activityRepo.GetActivityById(activityId);
@@ -71,14 +66,42 @@ namespace proactivity.Domain.Services
 
         }
 
-        public Task<Activity> GetActivityById(int activityId)
+        public async Task<Activity> GetActivityById(int activityId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var activity = await _activityRepo.GetActivityById(activityId);
+                if (activity != null) 
+                { 
+                    return activity; 
+                }
+                return null;
+                 
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
-        public Task<IEnumerable<Activity>> GetAllActivities(Activity model)
+        public async Task<IEnumerable<Activity>> GetAllActivities(Activity model)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                var activities = await _activityRepo.GetAllActivities();
+                
+                if (activities == null) return null;
+
+                return activities;
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+           
+
         }
 
 

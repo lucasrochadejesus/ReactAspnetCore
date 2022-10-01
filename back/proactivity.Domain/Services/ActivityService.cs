@@ -84,7 +84,7 @@ namespace proactivity.Domain.Services
             }
         }
 
-        public async Task<IEnumerable<Activity>> GetAllActivities(Activity model)
+        public async Task<IEnumerable<Activity>> GetAllActivities()
         {
             try
             {

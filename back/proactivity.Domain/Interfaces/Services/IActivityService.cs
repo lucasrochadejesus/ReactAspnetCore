@@ -11,7 +11,7 @@ namespace proactivity.Domain.Interfaces.Services
     {
         Task<Activity> AddActivity(Activity model);
         Task<Activity> UpdateActivity(Activity model); 
-        Task<IEnumerable<Activity>> GetAllActivities(Activity model);
+        Task<IEnumerable<Activity>> GetAllActivities();
         Task<Activity> GetActivityById(int activityId);
         Task<bool> DeleteActivity(int activityId);
 

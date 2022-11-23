@@ -16,12 +16,16 @@ namespace proactivity.Domain.Entities
 
         public DateTime creationDate { get; set; }
 
-        public DateTime conclusionDate { get; set; }
+        public DateTime? conclusionDate { get; set; }
 
         public Priority Priority { get; set; }
- 
 
-        public Activity() => creationDate = DateTime.Now;
+
+        public Activity() 
+        {
+            creationDate = DateTime.Now;
+            conclusionDate = null;
+        } 
 
         public Activity(int id, string title, string description, DateTime creationDate, DateTime conclusionDate, Priority priority) : this()
         {
@@ -40,7 +44,7 @@ namespace proactivity.Domain.Entities
                 conclusionDate = DateTime.Now;
             } else
             {
-                throw new Exception($"Activity conclusion! {conclusionDate.ToString()}");
+                throw new Exception($"Activity conclusion! {conclusionDate?.ToString()}");
             }
         }
     }
